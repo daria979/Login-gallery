@@ -157,6 +157,29 @@ button {
     margin: 7% auto;
     letter-spacing: 0.05em;
 }
+
+a {
+    display: inline-block;
+    color: #252537;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
 /* Submits */
 .submits {
     width: 48%;
@@ -172,13 +195,13 @@ button {
 
 
 /* buttons hover */
-button:hover {
+button:hover a:hover {
     transform: translatey(3px);
     box-shadow: none;
 }
 
 /* buttons hover Animation */
-button:hover {
+button:hover a:hover{
     animation: ani9 0.4s ease-in-out infinite alternate;
 }
 @keyframes ani9 {
