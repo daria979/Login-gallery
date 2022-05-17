@@ -10,7 +10,7 @@
     <title>Login-gallery</title>
 </head>
 <body>
-   <form action="signup.php" action='POST'>
+   <form action="signup.php" method='POST'>
       <input id="login" type="radio" name="tab"/>
       <label class="tab_label" for="login">log in</label>
       <input id="signup" type="radio" name="tab"/>
