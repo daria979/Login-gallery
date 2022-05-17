@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +18,23 @@
       <input id="login" type="radio" name="tab"/>
       <label class="tab_label" for="login">log in</label>
       <input id="signup" type="radio" name="tab"/>
-      <label class="tab_label" for="signup">sign up</label>  
-      <!--<figure class="reveal_login">
+      <label class="tab_label" for="signup">sign up</label> 
+
+      <figure class="reveal_login">
         <p>Please log in with your account.</p>
-        <input type="text" placeholder="user"/>      
-        <input type="password" placeholder="password"/> 
+        
+        <input type="text"  placeholder="E-mail" name="email"/>
+        <input type="password" placeholder="Password" name="password"/> 
+
         <input id="logged_in" type="checkbox"/>
         <label class="content_label" for="logged_in">Keep me logged in</label>
-        <input type="submit" value="Log in"/>
-      </figure>-->  
+
+        <button type="submit" name="login">Log in</button>
+      </figure>  
+
       <figure class="reveal_signin">
         <p>You can register a new account.</p>     
+
         <input type="text"  placeholder="Surname" name="surname"/>
         <input type="text"  placeholder="Last Name" name="firstname"/>
         <input type="text"  placeholder="E-mail" name="email"/>
@@ -33,6 +43,21 @@
         <button type="submit" name="submit">Sign in</button>
       </figure>
     </form>
+
+    <!-- PAGINA HTML ACTUALIZATA DUPA LOGARE -->
+    <section>
+
+      <?php
+        if(isset($_SESSION['userEmail'])){
+          include_once 'contend.php';
+        }
+        else{
+          echo '<p>You are logged out!</p>';
+        }
+      ?>
+      
+
+    </section>
 
 </body>
 </html>
