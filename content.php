@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>HELLO USER!</h1>
+    <p>Aici va fi feed-ul cu postarile tuturor userilor</p>
 </body>
 </html>

@@ -45,7 +45,7 @@ form label.tab_label {
 
 form label.tab_label:hover,
 form input[type="radio"]:checked + label.tab_label {
-  background: #ffa369;
+ background: #ffa369;
   color: #fff;
 }
 
