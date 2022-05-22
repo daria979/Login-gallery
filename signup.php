@@ -17,7 +17,8 @@
     if (isset($_POST['password'])) {
         $password = mysqli_real_escape_string($conn, $_POST['email']) ;}
 
-    $hash = password_hash($password,  PASSWORD_DEFAULT);
+    //pentru criptarea parolei
+    //$hash = password_hash($password,  PASSWORD_DEFAULT);
     
     $select = mysqli_query($conn, "SELECT * FROM userdata WHERE email = '".$_POST['email']."'");
 
@@ -30,7 +31,7 @@
         echo '<script>alert("This email address is already used!")</script>';
         }
         else{
-            $sql = "INSERT INTO userdata (surname, firstname, email, pwd) VALUES ('$surname', '$firstname', '$email','$hash'); ";
+            $sql = "INSERT INTO userdata (surname, firstname, email, pwd) VALUES ('$surname', '$firstname', '$email','$password'); ";
             mysqli_query($conn, $sql);
             header("Location: index.php?singup=succes");
             

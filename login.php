@@ -9,6 +9,7 @@
 
         
         $select = mysqli_query($conn, "SELECT * FROM userdata WHERE email = '$email' AND pwd = '$password' " );
+        
         $count = mysqli_num_rows($select);
         
        // echo "$pass";
