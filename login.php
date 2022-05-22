@@ -7,11 +7,12 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        //isset($cOTLdata['char_data']);
-        //$len = isset($cOTLdata['char_data']) ? count($cOTLdata['char_data']) : 0;
-
-        //$pass = "SELECT pwd FROM userdata WHERE email=?";
-
+        
+        $select = mysqli_query($conn, "SELECT * FROM userdata WHERE email = '$email' AND pwd = '$password' " );
+        $count = mysqli_num_rows($select);
+        
+       // echo "$pass";
+        
         //ERROR Messages
         
         if(empty($email)  || empty($password)){
@@ -19,14 +20,16 @@
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo '<script>alert("Invalid email format!")</script>';
-        }//de modificat acest if!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        else if (password_verify($password, $pass)) {
-            header("Location: content.php");
-        }/////////////////////////////////////////////////////////////////////////////////////////////////
-        }else{
-            echo '<script>alert("NUUUUUUUUU E BUN!")</script>';
-            exit();
         }
+        else if ($count>0){
+            header("Location: content.php");
+            //echo '<script>alert("este bun!")</script>';
+        }
+        else{
+            //header("Location: login.php");
+            echo '<script>alert("Wrong password!")</script>';
+        } 
+    }    
     
     
     
