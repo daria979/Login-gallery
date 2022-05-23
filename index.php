@@ -52,7 +52,8 @@
       </figure>
 </form>
 
-    <!-- PAGINA HTML ACTUALIZATA DUPA LOGARE -->
+    <!-- POTI STERGE --> 
+    
     <section>
 
       <?php

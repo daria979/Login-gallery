@@ -9,5 +9,7 @@
 <body>
     <h1>HELLO USER!</h1>
     <p>Aici va fi feed-ul cu postarile tuturor userilor</p>
+
+    <button type="submit" name="logout">Log out</button>
 </body>
 </html>
