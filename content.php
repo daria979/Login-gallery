@@ -11,8 +11,7 @@
 </head>
 <body>
     <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Log in / Sign up</a></li>
+        <li><a class="active" href="feed.php">Feed</a></li>
         <li><a href="logout.php">Log out</a></li>
       </ul>
 

@@ -14,3 +14,4 @@ CREATE TABLE detail_post (
     orderGallery longtext not null
 );
 
+

@@ -43,8 +43,8 @@
       <figure class="reveal_signin">
         <p>You can register a new account.</p>     
 
-        <input type="text"  placeholder="Surname" name="surname"/>
-        <input type="text"  placeholder="Last Name" name="firstname"/>
+        <input type="text"  placeholder="Name" name="surname"/>
+        <input type="text"  placeholder="Username" name="firstname"/>
         <input type="text"  placeholder="E-mail" name="email"/>
         <input type="password" placeholder="Password" name="password"/> 
 
