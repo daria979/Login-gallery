@@ -22,7 +22,7 @@
       <div class="wrapper">
         <div class="blog_post">
           <div class="img_pod">
-            <img src="https://pbs.twimg.com/profile_images/890901007387025408/oztASP4n.jpg" alt="random image">
+            <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="random image">
           </div>
               <form action="upload.php" method="POST" enctype="multipart/form-data">
                 <label>Title:</label>

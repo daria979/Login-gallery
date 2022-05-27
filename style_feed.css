@@ -2,7 +2,8 @@
     background-color: bisque;
     width: 50%;
     height: auto;
-    border: 2px blueviolet solid;
+    border: 2px red solid;
+    margin:30px;
 }
 
 .post{
@@ -19,11 +20,18 @@
     
     
 }
+.img-post{
+    width: 200px;
+    height: 250px;
+    background-color: blue;
+}
+
+
 /*.gallery-post{
     
     
 }*/
-.parent {
+/*.parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -51,4 +59,4 @@
     .div5 { grid-area: 1 / 5 / 2 / 6; 
         background-color: brown;
         height: auto;
-    }
+    }*/

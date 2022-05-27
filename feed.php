@@ -9,19 +9,52 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="user_post">
-        <!--Titlu postare-->
-        <h3 class="title-post post">TITLU USER 1</h3>
-        <!--Descriere postare-->
-        <div class="desc-post post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dolorem obcaecati optio quo consequatur ipsum culpa nesciunt at numquam. Vel, molestias? Ipsum animi quibusdam, illum odio aspernatur in natus unde.</div>
-        <!--Poze postare-->
-        <div class="parent post">
-            <div class="div1">poza1</div>
-            <div class="div2">poza2</div>
-            <div class="div3">poza3</div>
-            <div class="div4">poza4</div>
-            <div class="div5">poza5</div>
-        </div>
-    </section>
+
+<!-- de asta de ocupi de stilizare!-->
+
+<section class="user_post">
+        
+            <h3 class="title-post post">TITLU POSTARE</h3>
+            
+            <div class="desc-post post">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis recusandae, mollitia doloremque vitae officiis consectetur quod blanditiis modi, cumque tempore magnam cupiditate dolorem dicta quaerat quos! Recusandae voluptates aperiam amet.</div>
+            
+            <div class="img-post post"> </div>
+</section>
+
+<!--pana aici-->
+
+<?php
+
+    /*include_once 'server.php';
+
+    $sql = "SELECT * FROM detail_post ORDER BY idpost DESC";
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+        echo "SQL statement failed!";
+    }
+    else{
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+
+        while($row = mysqli_fetch_assoc($result)){
+            echo '<section class="user_post">
+        
+            <h3 class="title-post post">'.$row["titlepost"].'</h3>
+            
+            <div class="desc-post post">'.$row["descpost"].'</div>
+            
+            <img src="images/.$row["imgFullNameGallery"])">
+    
+         </section>';
+        }
+    }*/
+
+   
+?>
+   
+    
+     
+
+    
 </body>
 </html>

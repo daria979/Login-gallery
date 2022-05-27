@@ -19,6 +19,7 @@
             echo '<script>alert("All fields are required!")</script>';
         }else{
             $sql = "INSERT INTO detail_post (titlepost, descpost, imgFullNameGallery) VALUES ('$titlePost', '$descPost', '$fileName');";
+            move_uploaded_file($_FILES["file"]["name"],"images/".$_FILES["file"]["name"]);
             mysqli_query($conn, $sql);
             //header("Location: content.php?upload=succes");
             echo '<script>alert("All GOOOOOD!!!!")</script>';
@@ -41,7 +42,7 @@
 
         if(in_array($fileActualExt, $allowed)){
             if($fileError === 0){
-                if($fileSize > 2000000){
+                if($fileSize < 2000000){
                     include_once "dbcode.sql";
                 }
                 else{
