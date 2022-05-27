@@ -146,3 +146,15 @@ img {
   .container .btn:hover {
     background-color: black;
   }
+
+  .hello_user{
+    width:40%;
+    height: auto;
+    border: 3px white solid;
+    margin-left: 30%;
+    margin-top: 30px;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    
+  }

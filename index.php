@@ -52,22 +52,5 @@
       </figure>
 </form>
 
-    <!-- POTI STERGE --> 
-    
-    <section>
-
-      <?php
-        /*if(isset($_SESSION['l-email'])){
-          //include 'contend.php';
-          echo '<p>You are logged in!</p>';
-        }
-        else{
-          echo '<p>You are logged out!</p>';
-        }*/
-      ?>
-      
-
-    </section>
-
 </body>
 </html>

@@ -33,7 +33,7 @@
         else{
             $sql = "INSERT INTO userdata (surname, firstname, email, pwd) VALUES ('$surname', '$firstname', '$email','$password'); ";
             mysqli_query($conn, $sql);
-            header("Location: index.php?singup=succes");
+            echo '<script>alert("Your account has created with succes!")</script>';
             
         }
    

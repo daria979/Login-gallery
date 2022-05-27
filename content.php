@@ -15,8 +15,10 @@
         <li><a href="logout.php">Log out</a></li>
       </ul>
 
-
-
+  
+      <h1 class="hello_user">Hello!</h1>
+      <p class="hello_user">You can add a new post here!</p>
+        
 
       <div class="wrapper">
         <div class="blog_post">
@@ -26,7 +28,7 @@
               <form action="upload.php" method="POST" enctype="multipart/form-data">
                 <label>Title:</label>
                 <input type="text" name="title" /><br><br>
-                <label>Content:</label>
+                <label>Type something..</label>
                 <textarea name ="content"rows="10" cols="30" placeholder="Scrie aici ce mesaj doreşti"> </textarea>
 
                 <div class="container">
@@ -42,6 +44,6 @@
 
       <footer>
         <p>Copyright &copy; 2022 Trip Daria & Eros Alexandra</p>
-          </footer>
+      </footer>
 </body>
     </html>
