@@ -20,8 +20,8 @@
         }else{
             $sql = "INSERT INTO detail_post (titlepost, descpost, imgFullNameGallery) VALUES ('$titlePost', '$descPost', '$fileName');";
             mysqli_query($conn, $sql);
-            header("Location: content.php?upload=succes");
-            //echo '<script>alert("All GOOOOOD!!!!")</script>';
+            //header("Location: content.php?upload=succes");
+            echo '<script>alert("All GOOOOOD!!!!")</script>';
 
         }
 

@@ -11,9 +11,9 @@
 </head>
 <body>
     <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="sign.html">Log in / Sign up</a></li>
-        <li><a href="logout.html">Log out</a></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Log in / Sign up</a></li>
+        <li><a href="logout.php">Log out</a></li>
       </ul>
 
 
