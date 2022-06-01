@@ -26,9 +26,9 @@
             <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="random image">
           </div>
               <form action="upload.php" method="POST" enctype="multipart/form-data">
-                <label>Title:</label>
+                <label class="titlu"><strong>Title:</strong></label>
                 <input type="text" name="title" /><br><br>
-                <label>Type something..</label>
+                <label><strong>Description</strong></label>
                 <textarea name ="content"rows="10" cols="30" placeholder="Scrie aici ce mesaj doreşti"> </textarea>
 
                 <div class="container">

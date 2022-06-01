@@ -23,7 +23,7 @@ ul {
   }
 
   .active {
-    background-color: #ffa369;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
   }
 
   footer {
@@ -47,9 +47,7 @@ html {
 
 
 body {
-  background: #1488cc;
-  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
-  background: linear-gradient(to right,#2b32b2,#1488cc);
+  background: #ffa369;
 } 
 
 .wrapper {
@@ -125,6 +123,8 @@ img {
   .container img {
     width: 100%;
     height: auto;
+    margin-top: 70%;
+    margin-left: -210%;
   }
   
   .container .btn {
@@ -141,6 +141,7 @@ img {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    margin-left: -210%;
   }
   
   .container .btn:hover {
@@ -156,5 +157,8 @@ img {
     color:white;
     font-size: 50px;
     text-align: center;
-    
+  }
+
+  .titlu{
+    margin-left: 20%;
   }
