@@ -3,7 +3,7 @@
     width: 50%;
     height: auto;
     border: 2px red solid;
-    margin:30px;
+    margin-left: 25%;
 }
 
 .post{
@@ -16,13 +16,18 @@
     
 }
 .desc-post{
-    background-color: aquamarine;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
     
     
 }
 .img-post{
     width: 200px;
     height: 250px;
+    margin-left: 35%;
 }
+
+body {
+    background: #ffa369;
+  } 
 
 
