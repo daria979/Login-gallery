@@ -15,7 +15,7 @@
             echo '<script>alert("All fields are required!")</script>';
         }else{
             $sql = "INSERT INTO detail_post (titlepost, descpost, imgFullNameGallery) VALUES ('$titlePost', '$descPost', '$image');";
-            move_uploaded_file($_FILES["file"]["name"],"images/".$_FILES["file"]["name"]);
+            //move_uploaded_file($_FILES["file"]["name"],"images/".$_FILES["file"]["name"]);
             mysqli_query($conn, $sql);
             header("Location: feed.php");
         }

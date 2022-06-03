@@ -34,6 +34,7 @@
             $sql = "INSERT INTO userdata (surname, firstname, email, pwd) VALUES ('$surname', '$firstname', '$email','$password'); ";
             mysqli_query($conn, $sql);
             echo '<script>alert("Your account has created with succes!")</script>';
+            header("Location: index.php");
             
         }
    
